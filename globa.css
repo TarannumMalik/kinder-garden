@@ -1,0 +1,35 @@
+:root{
+    --padding:1rem 5.5rem;
+    --nav-font:1.2rem;
+    --max-padding:6.8rem 13rem;
+    --btn-padding:13px 44px;
+    --btn-color:#ffaf00;
+    --h1-size:6.25rem;
+    --h2-size:4.375rem;
+    --h5-size:1.625rem;
+}
+@media screen and (max-width:981px) {
+    :root{
+
+        --max-padding: 4rem 6rem;
+    --h1-size:5.25rem;
+
+    }
+}
+@media screen and (max-width:650px) {
+    :root{
+        --padding:1rem 3rem;
+    --max-padding:6.8rem 2rem;
+    --h1-size:4rem;
+    --h2-size:3rem
+--btn-padding:13px 34px;
+    }
+}
+@media screen and (max-width:400px) {
+    :root{
+        --padding:1rem 1rem;
+        --max-padding:4rem 0.6rem;
+--btn-padding:13px 24px;
+
+    }
+}

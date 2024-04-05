@@ -1,0 +1,165 @@
+@import url('globa.css');
+*{
+   font-family:  'Gamja Flower', cursive;
+   margin: 0;
+   padding: 0;
+}
+.back-img{
+    position: fixed;
+    z-index: -2;
+}
+.back-color{
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+.header,.sidenavs,.hero .about{
+display: flex;
+justify-content: space-between;
+padding: var(--padding);
+align-items: center;
+}
+.header .navs ul, .sidenavs ul,.hero .home button a, .about .content button a{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    text-decoration: none;
+    font-size: var(--nav-font);
+}
+.header .navs ul li a, .sidenavs ul li a,.about .content p,.class .container .class-choose .content button a,.parent p,.parent button a{
+    font-family: sans-serif;
+    text-decoration: none;
+    color: white;
+}
+.header .navs i,.hero .home,.hero .home button a,.about,.parent,.footer,.pvt{
+    color: white;
+}
+.sidenavs ul{
+    flex-direction: column;
+    width: 20rem;
+}
+#sidebar{
+    display: none;
+}
+@media screen and (max-width:930px) {
+    #sidebar{
+        display: block;
+    }
+    .header .navs ul li{
+        display: none;
+    }
+}
+/*hero*/
+.hero .home,.hero .tech .techs,.class .container,.parent,.contact .contacts,.footer,.hero .parent{
+padding: var(--max-padding);
+text-align: center;
+}
+.hero .home h5,.tech .techs h5,.hero .tech .techs .child h3,.child p,.class .container h5,.class .container .class-choose .content div, .class .container .class-choose .content h3,.parent h5,.contact .contacts h5,.contact .contacts .container .box h3,.contact .contacts .container .box p,.footer p {
+    font-size: var(--h5-size);
+} 
+.hero .home h1{
+    font-size: var(--h1-size);
+}
+.hero .home button,.about .content button,.class .container .class-choose .content button,.parent button{
+    padding: var(--btn-padding);
+    border-radius: 29px;
+    background: var(--btn-color);
+    border: none ;
+    margin: 3rem auto;
+}
+.hero .home button:hover,.about .content button:hover,.class .container .class-choose .content button:hover,.parent button:hover{
+transform: scale(1.02);
+cursor: pointer;
+}
+.hero .home button a{
+    font-size: 1.4rem;
+}
+/*tech*/
+.hero .tech .techs,.class .container,.contact .contacts{
+    background: white;
+    margin: -2rem 0;
+}
+.hero .tech .techs h1,.about .content h2,.class .container h2,.parent h2,.parent i,.contact .contacts h2,.contact .contacts .container .box i{
+    font-size: var(--h2-size);
+}
+.hero .tech .techs .child,.class .container .class-choose,.contact .contacts .container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 3rem -9rem;
+}
+.class .container .class-choose{
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+}
+.class .container .class-choose .box{
+border: 1px solid gainsboro;
+}
+.class .container .class-choose .box img,.about .img img{
+width: 100%;
+}
+.class .container .class-choose .box .content{
+    padding: var(--btn-padding);
+}
+.class .container .class-choose .box .content p{
+    font-family: sans-serif;
+    text-align: left;
+}
+.hero .parent{
+    background: #19bdc5;
+}
+.pvt{
+    text-align: center;
+    border-top: 1px solid rgb(216, 214, 214);
+    padding-top: 2rem;
+}
+#pink{
+    color: #ea3d84;
+}
+#pinkb{
+    background: #ea3d84;
+}
+#yellow{
+    color: #ffaf00;
+}
+#yellowb{
+    background: #ffaf00;
+}
+#green{
+    color: #0ced75;
+}
+#greenb{
+    background: #0ced75;
+}
+#blue{
+    color: #19bdc5;
+}
+#blueb{
+background: #19bdc5;
+}
+@media screen and (max-width:1000px) {
+    .hero .tech .techs .child,.class .container .class-choose,.contact .contacts .container{
+        grid-template-columns: auto auto;
+        margin: 3rem 2rem !important;
+    }
+}
+@media screen and (max-width:890px) {
+    
+    .hero .about{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+@media screen and (max-width:580px) {
+    .hero .tech .techs .child,.class .container .class-choose,.contact .contacts .container{
+        grid-template-columns: auto;
+    }
+    .contact .contacts .container .box i{
+        font-size: 3rem;
+        margin-top: 2rem;
+    }
+}
+@media screen and (max-width:400px){
+    .hero .tech .techs, .class .container, .contact .contacts {
+        margin: -1rem 0;
+    }
+}
